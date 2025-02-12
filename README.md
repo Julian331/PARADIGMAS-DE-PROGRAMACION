@@ -43,8 +43,10 @@ def division(n, m):
   quotient = 0
     remainder = n
     while remainder >= m:
-        remainder = resta(remainder, m)  
+        remainder = resta(remainder, m)
+        "remainder=resta"
         quotient = S(quotient)
+        "quotient=cociente"
 
   if remainder != 0:
         return f"{quotient} (inexacta)"
