@@ -1,0 +1,73 @@
+#include <stdio.h>
+
+// Factorial Iterativo
+unsigned long long factorial_iterativo(int n) {
+    unsigned long long fact = 1;
+    for (int i = 1; i <= n; i++) {
+        fact *= i;
+    }
+    return fact;
+}
+
+// Factorial Recursivo
+unsigned long long factorial_recursivo(int n) {
+    if (n == 0 || n == 1) return 1;
+    return n * factorial_recursivo(n - 1);
+}
+
+// Verificar si un número es primo
+int es_primo(int n) {
+    if (n < 2) return 0;
+    for (int i = 2; i * i <= n; i++) {
+        if (n % i == 0) return 0;
+    }
+    return 1;
+}
+
+// Listar primos en un intervalo [x, y)
+void listar_primos(int x, int y) {
+    for (int i = x; i < y; i++) {
+        if (es_primo(i)) {
+            printf("%d ", i);
+        }
+    }
+    printf("\n");
+}
+
+// Mínimo Común Divisor (MCD) usando el algoritmo de Euclides
+int mcd(int a, int b) {
+    while (b != 0) {
+        int temp = b;
+        b = a % b;
+        a = temp;
+    }
+    return a;
+}
+
+int main() {
+    int n, x, y, a, b;
+    
+    // Factorial Iterativo y Recursivo
+    printf("Ingrese un número para calcular su factorial: ");
+    scanf("%d", &n);
+    printf("Factorial Iterativo de %d: %llu\n", n, factorial_iterativo(n));
+    printf("Factorial Recursivo de %d: %llu\n", n, factorial_recursivo(n));
+    
+    // Verificar si es primo
+    printf("Ingrese un número para verificar si es primo: ");
+    scanf("%d", &n);
+    printf("%d %s primo.\n", n, es_primo(n) ? "es" : "no es");
+    
+    // Listar primos en un intervalo
+    printf("Ingrese los límites del intervalo [x, y) para listar primos: ");
+    scanf("%d %d", &x, &y);
+    printf("Números primos en el intervalo [%d, %d): ", x, y);
+    listar_primos(x, y);
+    
+    // MCD
+    printf("Ingrese dos números para calcular el MCD: ");
+    scanf("%d %d", &a, &b);
+    printf("El MCD de %d y %d es: %d\n", a, b, mcd(a, b));
+    
+    return 0;
+}
