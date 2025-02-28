@@ -1,0 +1,2 @@
+BISECCION = Y (λf.λf x.λa.λb.if ∣b−a∣<ϵ then (a+b)/2 else f f xm b)
+(donde 𝑚=(𝑎+𝑏)/2m=(a+b)/2, y se evalúa el cambio de signo de 𝑓𝑥(𝑚)f x(m))
