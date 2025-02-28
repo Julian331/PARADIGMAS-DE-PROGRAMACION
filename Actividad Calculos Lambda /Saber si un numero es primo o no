@@ -1,0 +1,3 @@
+Y (λf.λn.λd.if d=1 then true else if (nmodd=0) then false else f n (d−1)
+*** d: comienza en -1
+------------------------------------------------------------------------
