@@ -1,5 +1,5 @@
 factorial=Y (λf.λz.if z=0 then 1 else z×f (z−1))
-  *** Y es el combinador de punto fijo, necesario para la recursión.
-  *** λf.λz. define una función anónima que toma z.
-  *** La condición 
-  *** if z=0 then 1 else z×f (z−1) implementa el factorial de manera recursiva.
+- λf= este lambda de f define una funcion el cual se tomara para usarlo en la recursion
+- λz= esta es la toma de datos de la entrada
+- hay una condicion de si z=0 devolera un 1
+- caso contrario de si no se cumple z multiplica por z-1
