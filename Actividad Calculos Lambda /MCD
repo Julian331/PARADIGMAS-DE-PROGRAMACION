@@ -1,0 +1,1 @@
+MCD=Y (λf.λx.λy.if y=0 then x else f y (xmody))
