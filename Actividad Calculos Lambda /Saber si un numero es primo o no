@@ -1,3 +1,5 @@
 si es primo= Y (λf.λn.λd.if d=1 then true else if (nmodd=0) then false else f n (d−1)
-*** d: comienza en -1
+- λf- es la definicion para que sea recursiva
+- λn.λd- es la funcion que toma a n que es el numero y d que es el divisor
+- se reduce a d hasta que sea 1 y se vuelva a evaluar
 
