@@ -1,1 +1,4 @@
 COS=Y (λf.λx.λn.if n=0 then 1 else (−1) n×x 2n/(2n)!+f x (n−1))
+- como en las anteriores tienen una estructura parecida
+- en este caso si n= 0 devolvera 1
+- se usa la recursion, porque como hay que sumar cada termino de la serie, cada llamada calcula el cos con la base de taylor, hasta que finalmente se llegue al caso base (0)
