@@ -1,2 +1,6 @@
-BISECCION = Y (λf.λf x.λa.λb.if ∣b−a∣<ϵ then (a+b)/2 else f f xm b)
+BISECCION = Y (λf.λf x.λa.λb.if ∣b−a∣<ϵ then (a+b)/2 else f f x m b)
+
 (donde 𝑚=(𝑎+𝑏)/2m=(a+b)/2, y se evalúa el cambio de signo de 𝑓𝑥(𝑚)f x(m))
+
+- en este se mide la distancia que hay entre los numeros a y b. si esta distancia es corta la raiz los aproxima a un punto medio.
+- si la raiz esta entre a y m lo signos seran diferentes, por lo que se reduce el intervalo, esto se hace sucesivamente hasta que se llegue a la mejor precision
