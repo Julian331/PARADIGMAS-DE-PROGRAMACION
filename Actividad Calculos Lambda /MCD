@@ -1,1 +1,4 @@
-MCD=Y (λf.λx.λy.if y=0 then x else f y (xmody))
+MCD=Y (λf.λx.λy.if y=0 then x else f y (x mod y))
+- como en los anteriores λf- es la funcion recursiva
+- λx.λy- son las que recibe la entrada de datos
+si y que es la que recibe los datos es igual a 0 devolvera x ya que eso significa que ya se hizo el MCD
