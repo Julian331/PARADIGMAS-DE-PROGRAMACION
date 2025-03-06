@@ -8,7 +8,8 @@ unsigned long long factorial_recursivo(int n) {
     }
     return n * factorial_recursivo(n - 1);
 }
-----------------------------------------------------------------------------------------------------------------------------------
+
+
 ITERATIVO
 
 #include <stdio.h>
@@ -20,7 +21,7 @@ unsigned long long factorial_iterativo(int n) {
     }
     return resultado;
 }
--------------------------------------------------------------------------------------------------------------------------------------
+
 
 1) TIEMPO DE EJECUCION
    - ITERATIVO
