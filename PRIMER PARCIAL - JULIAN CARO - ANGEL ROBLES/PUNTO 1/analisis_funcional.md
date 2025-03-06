@@ -1,28 +1,3 @@
-RECURSIVO
-
-#include <stdio.h>
-
-unsigned long long factorial_recursivo(int n) {
-    if (n == 0 || n == 1) {
-        return 1;
-    }
-    return n * factorial_recursivo(n - 1);
-}
-
-
-ITERATIVO
-
-#include <stdio.h>
-
-unsigned long long factorial_iterativo(int n) {
-    unsigned long long resultado = 1;
-    for (int i = 1; i <= n; i++) {
-        resultado *= i;
-    }
-    return resultado;
-}
-
-
 1) TIEMPO DE EJECUCION
    - ITERATIVO
        - Es mas rapido ya que no es necesario que tenga que usar las llamadas recursivas
@@ -36,7 +11,7 @@ unsigned long long factorial_iterativo(int n) {
 ----------------------------------------------------------------------------------------------------------------------------------------
 2) CANTIDAD DE MEMORIA USADA
    - ITERATIVO
-       - 
+       - utiliza una cantidad constante de memoria, ya que solo necesita almacenar datos
    - RECURSIVO
        -
         
